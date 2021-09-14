@@ -1,4 +1,4 @@
-# DomLMSC261
+# DomLMSC261 Markdown Outline
 ## _September 13th Notes_
 1. A computer is a clock with benefits
 2. All software starts as code
