@@ -7,4 +7,4 @@
 5. A compiler takes codes and breaks them down into smaller pieces
 6. 90% of my coding errors will come from the fact that I missed one symbol or I told myself "oh that'll be fine the way it is" when in reality, that one symbol mattered and I will spend *years* debugging just to find out I found only one symbol was missing the whole time. (curse you syntax errors)
 7. Computers use "trees" as a form of organization.
-8. an Algorithm is a software that does a set job (like searching a database for a file or computing a number from an array)
+8. an Algorithm is a software that does a set job (like searching a database for a file or computing a number from an array), I love them because they're actually insanely powerful (I have an anecdote about how crazy Algorithms are)
