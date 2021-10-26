@@ -7,7 +7,7 @@ def createTriangle(stack):
             print(" ", end = "")
 
         for star in range(starCount):
-            print("*", end = "")
+            print("#", end = "")
 
         print()
         starCount = starCount + 1
