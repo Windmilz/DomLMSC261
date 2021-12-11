@@ -10,61 +10,63 @@
                     "prompts": [
                         {
                             "name": "out of bed",
-                            "keywords": ["get out of bed", "stop alarm", "get up", "check time", "door right", "roll over"],
+                            "keywords": ["turn off alarm", "stop alarm", "get up", "check time", "door right", "roll over"],
                             "results":  {
-                                "successText": "You roll over to your alarm and check the time. It is 8:30.",
-                                "failText": "The door is locked with an access code!",
-                                "roomToEnter": "Bedroom2",
-                                "itemsGiven": ""
+                                "successText": "You roll over to your alarm and check the time. It is 8:30. You have work at 9.",
+                                "failText": "You have work today, but you can probably sleep a little longer, right?",
+                                "roomToEnter": "Car",
+                                "itemsGiven": "panik"
                             },
-                            "requirements": [""]
+                            "requirements": ["shoes", "keys"]
                         },
                         {
-                            "name": "look room",
-                            "keywords": ["look room", "look at room", "search room", "examine room", "look in"],
+                            "name": "Hurri",
+                            "keywords": ["get up" , "get dressed" , "get ready" , "get out of bed"],
                             "results":  {
-                                "successText": "You see a room with a door to the right and a statue in the middle."
+                                "successText": "You get dressed and start to hurry out the door. Halfway out the door you realize you don't have any shoes on."
                             }
                         },
                         {
-                            "name": "get statue",
-                            "keywords": ["look room", "look at room", "search room", "examine room", "look in"],
+                            "name": "Look for shoes",
+                            "keywords": ["check the kitchen"],
                             "results":  {
-                                "successText": "You see a room with a door to the right and a statue in the middle."
+                                "failText": "Your shoes are not there" ,
+                                "successText": "You find your shoes in the kitchen. Wait, why are you shoes in the kitchen?" ,
+                                "itemsGiven" : ["shoes"]
                             }
                         },
                         {
-                            "name": "get statue",
-                            "keywords": ["get statue", "pick up statue", "take statue", "pick statue"],
+                            "name": "Key dog",
+                            "getText" : "Shoes in hand, you head for the door. You reach down for your car keys, but they're not on your kitchen counter anymore." ,
+                            "keywords": ["look for keys", "look around"],
                             "results":   {
-                                "successText": "You pick up the statue. It feels heavy in your hands, and there's something hanging off the bottom.",
-                                "itemsGiven": ["statue"]
+                                "successText": "You hear a slight jingle from your dogs bed. Your dog is playing with your keys."
                               }
                         },
                         {
-                            "name": "rotate statue",
-                            "keywords": ["rotate statue", "rotate the statue"],
+                            "name": "gimmie my keys dawg",
+                            "keywords": ["get my keys", "take the keys", "get keys" , "take keys"],
                             "results": {
-                                "successText": "You take the note from the bottom of the statue.",
-                                "failText": "You have no statue to look at!",
-                                "itemsGiven": ["note"]
+                                "successText": "After what feels like an eternity of back and forth, your dog finally gives you your keys.",
+                                "failText": "Your dog seems especially reluctant today. Is it a no bones day?",
+                                "itemsGiven": ["keys"]
                             },
-                            "requirements": ["statue"]
+                            "requirements": ["shoes", "keys"]
                         },
                         {
-                            "name": "look note",
-                            "keywords": ["look at note", "examine note", "take note", "get note", "check note", "read note", "look note"],
+                            "name": "Garage",
+                            "keywords": ["go to work", "get in car", "drive to work", "leave home", "leave the house", "leave"],
                             "results": {
-                                "successText": "You look at the note and find an access code: '14052'.",
-                                "failText": "You have no note to look at!",
-                                "itemsGiven": ["accessKey"]
+                                "successText": "You finally get into your car, pulling out of your lot and head to work.",
+                                "failText": "You should really leave for work now.",
+                                "itemsGiven": [""]
                               },
-                            "requirements": ["statue", "note"]
+                            "requirements": ["keys", "shoes"]
                         }
                     ]
                 },
                 {
-                    "name": "SecondRoom",
+                    "name": "Highway",
                     "getText": "You did it! You won!"
                 }
             ]
